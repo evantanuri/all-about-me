@@ -1,28 +1,135 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UTS-2 My Songs for You</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UTS-2 My Songs for You — Evan Nathanael Tanuri</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Styling tambahan khusus UTS2 */
+    .video-container{
+      position:relative; padding-bottom:56.25%; height:0; overflow:hidden;
+      border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,.1); margin-bottom:28px;
+      background:#000;
+    }
+    .video-container iframe{
+      position:absolute; inset:0; width:100%; height:100%; border:0; border-radius:16px;
+    }
+    h2{
+      color:#1d4ed8; display:flex; align-items:center; gap:10px; margin-top:24px;
+    }
+    h2::before{ content:"🎧"; font-size:22px; }
+    .lyrics,.meaning,.about{
+      background:#f1f6ff; border-radius:16px; padding:18px 24px;
+      border:1px solid rgba(0,0,0,.05); margin-top:10px;
+    }
+    .note{ font-size:13px; color:#64748b; margin-top:8px }
+  </style>
 </head>
 <body>
   <div class="layout">
+    <!-- Sidebar -->
     <aside>
-      <div class="brand"><h2>Evan Nathanael Tanuri</h2><p class="nim">18224091</p></div>
+      <div class="brand">
+        <h2>Evan Nathanael Tanuri</h2>
+        <p class="nim">18224019</p>
+      </div>
       <nav>
-        <a class="nav-item" href="index.html">🏠 Selamat Datang</a>
-        <a class="nav-item" href="UTS1.html">👤 UTS-1 All About Me</a>
-        <a class="nav-item active" href="UTS2.html">🎵 UTS-2 My Songs for You</a>
-        <a class="nav-item" href="UTS3.html">📖 UTS-3 My Stories for You</a>
-        <a class="nav-item" href="UTS4.html">🤍 UTS-4 My SHAPE</a>
-        <a class="nav-item" href="UTS5.html">📄 UTS-5 My Personal Reviews</a>
+        <a class="nav-item" href="index.html"><span class="pill"></span><span class="icon">🏠</span><span>Selamat Datang</span></a>
+        <a class="nav-item" href="UTS1.html"><span class="pill"></span><span class="icon">👤</span><span>UTS-1 All About Me</span></a>
+        <a class="nav-item active" href="UTS2.html"><span class="pill"></span><span class="icon">🎵</span><span>UTS-2 My Songs for You</span></a>
+        <a class="nav-item" href="UTS3.html"><span class="pill"></span><span class="icon">📖</span><span>UTS-3 My Stories for You</span></a>
+        <a class="nav-item" href="UTS4.html"><span class="pill"></span><span class="icon">🤍</span><span>UTS-4 My SHAPE</span></a>
+        <a class="nav-item" href="UTS5.html"><span class="pill"></span><span class="icon">📄</span><span>UTS-5 My Personal Reviews</span></a>
       </nav>
     </aside>
 
+    <!-- Main -->
     <main>
-      <header class="header"><h1>My Songs for You</h1></header>
-      <article class="card"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
+      <header class="header">
+        <h1>My Songs for You</h1>
+        <p>UTS-2 Komunikasi Interpersonal & Publik (II2100)</p>
+      </header>
+
+      <article class="card">
+        <!-- 🎬 Music Video -->
+        <h2>Music Video</h2>
+        <!-- Responsive container -->
+<div style="position:relative;padding-bottom:56.25%;height:0;border-radius:16px;overflow:hidden;background:#000;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/CHAGyzL4Z1Q?modestbranding=1&rel=0"
+    title="We'll Be Okay, For Today - Arash Buana & Anya Taroreh"
+    style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:16px;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<!-- Fallback button + thumbnail link -->
+<div style="margin-top:12px;text-align:center">
+  <a href="https://www.youtube.com/watch?v=CHAGyzL4Z1Q" target="_blank" rel="noopener"
+     style="display:inline-block;padding:10px 16px;border-radius:10px;background:#1d4ed8;color:#fff;text-decoration:none;font-weight:600;">
+    ▶ Watch on YouTube
+  </a>
+</div>
+
+
+        <!-- 🎶 About the Song -->
+        <h2>About It</h2>
+        <div class="about">
+          <p>
+            Lagu <strong>“We'll Be Okay, For Today”</strong> oleh <strong>Arash Buana &amp; Anya Taroreh</strong>
+            menggambarkan ketulusan, penerimaan, dan harapan—perasaan sederhana namun hangat.
+            Melalui harmoni lembut dan lirik yang jujur, lagu ini mengingatkan bahwa tidak apa-apa
+            untuk tidak selalu kuat, selama ada seseorang untuk berbagi hari.
+          </p>
+        </div>
+        <!-- 📝 Lyrics -->
+        <h2>Lyrics</h2>
+        <div class="lyrics">
+          <p><em>
+            It's been a while since I<br>
+            Last saw your smile<br>
+            But somehow I still feel<br>
+            Like you're right here with me<br><br>
+
+            We talked all night<br>
+            ‘Til morning light<br>
+            Pretending everything's alright<br><br>
+
+            We'll be okay<br>
+            For today<br>
+            Even though the world's not the same<br><br>
+
+            We'll be fine<br>
+            Just for tonight<br>
+            Even if tomorrow won't be kind<br><br>
+
+            I don't know what tomorrow brings<br>
+            But I know this love still means something<br><br>
+
+            We'll be okay<br>
+            For today
+          </em></p>
+        </div>
+
+        <!-- 💭 Song Meaning -->
+        <h2>Why This Song Matters to Me</h2>
+        <div class="meaning">
+          <p>
+            Lagu ini bercerita tentang menerima kenyataan dengan hati yang tenang, bahwa tidak semua hal bisa kita kendalikan,
+            namun selama ada kasih dan keberadaan orang terdekat, semua akan terasa lebih ringan.
+            “We'll be okay, for today” bukan sekadar janji, melainkan bentuk keikhlasan untuk tetap berterima kasih atas hari ini,
+            tanpa terlalu mengkhawatirkan hari esok.
+          </p>
+          <p>
+            Saya memilih lagu ini karena maknanya sangat relevan dengan perjalanan hidup pribadi dan relasi yang saya jalani.
+            Ada masa di mana kita merasa lelah, tetapi cukup satu kalimat sederhana dari orang yang kita percayai,
+            untuk membuat semuanya terasa lebih baik. Lagu ini menjadi simbol ketenangan dan keyakinan bahwa
+            <em>“everything will be okay, at least for today.”</em>
+          </p>
+        </div>
+      </article>
     </main>
   </div>
 </body>
