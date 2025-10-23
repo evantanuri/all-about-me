@@ -1,12 +1,27 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UTS-3 My Stories for You</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UTS-3 My Stories for You — Evan Nathanael Tanuri</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Tambahan ringan khusus UTS-3 */
+    .story-title{
+      display:flex; align-items:center; gap:10px; color:#1d4ed8; margin:0 0 8px;
+    }
+    .story-title::before{ content:"🌱"; font-size:22px }
+    .lead{ color:#475569; margin:0 0 18px; font-weight:600 }
+    .quote{
+      margin:18px 0; padding:14px 18px; border-left:4px solid #3b82f6;
+      background:#f1f6ff; border-radius:10px; color:#0f172a;
+      font-style:italic;
+    }
+  </style>
 </head>
 <body>
   <div class="layout">
+    <!-- Sidebar -->
     <aside>
       <div class="brand">
         <h2>Evan Nathanael Tanuri</h2>
@@ -22,9 +37,46 @@
       </nav>
     </aside>
 
+    <!-- Main -->
     <main>
-      <header class="header"><h1>My Stories for You</h1></header>
-      <article class="card"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
+      <header class="header">
+        <h1>My Stories for You</h1>
+        <p>UTS-3 Komunikasi Interpersonal & Publik (II2100)</p>
+      </header>
+
+      <article class="card">
+        <h2 class="story-title">Belajar Menata Ulang</h2>
+        <p class="lead">
+          Sebuah kisah singkat tentang menata ulang ekspektasi, meminta bantuan, dan terus melangkah, pelan, tapi pasti.
+        </p>
+
+        <p>
+          Semester lalu, saya pernah merasa “kalah start”. Tugas datang bertubi-tubi, ritme organisasi sedang padat,
+          dan satu proyek pemrograman terasa mandek. Alih-alih memaksa semuanya selesai sekaligus, saya memutuskan
+          untuk menata ulang langkah: menyusun prioritas, memecah masalah besar menjadi bagian kecil, dan yang paling
+          sulit, mengakui bahwa saya butuh bantuan. Saya menghubungi rekan satu tim, meminta waktu diskusi singkat,
+          lalu membagi kerja berdasarkan kekuatan masing-masing.
+        </p>
+
+        <div class="quote">
+          “Ternyata, mengakui butuh bantuan bukan tanda kelemahan, justru titik balik agar kita bisa tumbuh bersama.”
+        </div>
+
+        <p>
+          Hasilnya tidak langsung spektakuler, tetapi ritme kerja mulai stabil. Setiap malam, kami menutup sesi dengan
+          catatan kecil: apa yang sudah beres, apa yang tertunda, dan satu hal baik yang patut disyukuri. Kebiasaan
+          sederhana itu membuat kami tetap waras. Saya belajar bahwa kolaborasi bukan sekadar membagi tugas, melainkan
+          juga membagi kepercayaan: percaya pada diri sendiri, dan percaya pada tim.
+        </p>
+
+        <p>
+          Dari pengalaman itu, saya menyimpan tiga pegangan: <strong>fokus pada satu langkah yang bisa dilakukan hari ini</strong>,
+          <strong>komunikasikan hambatan lebih cepat daripada terlambat</strong>, dan <strong>rayakan kemajuan kecil</strong>.
+          Ketiganya membuat perjalanan terasa lebih ringan. Saya mungkin tidak selalu yang tercepat, tetapi saya ingin
+          menjadi orang yang dapat diandalkan—yang menjaga ritme, menghargai proses, dan terus maju. Karena pada akhirnya,
+          kemajuan bukan soal seberapa besar lompatan hari ini, tetapi seberapa konsisten kita melangkah setiap hari.
+        </p>
+      </article>
     </main>
   </div>
 </body>
