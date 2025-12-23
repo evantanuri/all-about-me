@@ -16,35 +16,68 @@
       position:absolute; inset:0; width:100%; height:100%; border:0; border-radius:16px;
     }
     h2{
-      color:#1d4ed8; display:flex; align-items:center; gap:10px; margin-top:24px;
+      color:var(--accent-700); display:flex; align-items:center; gap:10px; margin-top:24px;
     }
     h2::before{ content:"🎧"; font-size:22px; }
     .lyrics,.meaning,.about{
-      background:#f1f6ff; border-radius:16px; padding:18px 24px;
-      border:1px solid rgba(0,0,0,.05); margin-top:10px;
+      background:var(--sidebar); border-radius:16px; padding:18px 24px;
+      border:1px solid var(--border); margin-top:10px;
     }
-    .note{ font-size:13px; color:#64748b; margin-top:8px }
+    .note{ font-size:13px; color:var(--muted); margin-top:8px }
   </style>
 </head>
 <body>
   <div class="layout">
-    <!-- Sidebar -->
     <aside>
       <div class="brand">
         <h2>Evan Nathanael Tanuri</h2>
         <p class="nim">18224019</p>
       </div>
       <nav>
-        <a class="nav-item" href="index.html"><span class="pill"></span><span class="icon">🏠</span><span>Selamat Datang</span></a>
-        <a class="nav-item" href="UTS1.html"><span class="pill"></span><span class="icon">👤</span><span>UTS-1 All About Me</span></a>
-        <a class="nav-item active" href="UTS2.html"><span class="pill"></span><span class="icon">🎵</span><span>UTS-2 My Songs for You</span></a>
-        <a class="nav-item" href="UTS3.html"><span class="pill"></span><span class="icon">📖</span><span>UTS-3 My Stories for You</span></a>
-        <a class="nav-item" href="UTS4.html"><span class="pill"></span><span class="icon">🤍</span><span>UTS-4 My SHAPE</span></a>
-        <a class="nav-item" href="UTS5.html"><span class="pill"></span><span class="icon">📄</span><span>UTS-5 My Personal Reviews</span></a>
+        <a class="nav-item" href="index.html">
+          <span class="icon">🏠</span><span>Selamat Datang</span>
+        </a>
+        <a class="nav-item" href="UTS1.html">
+          <span class="icon">👤</span><span>UTS-1 All About Me</span>
+        </a>
+        <a class="nav-item active" href="UTS2.html">
+          <span class="icon">🎵</span><span>UTS-2 My Songs for You</span>
+        </a>
+        <a class="nav-item" href="UTS3.html">
+          <span class="icon">📖</span><span>UTS-3 My Stories for You</span>
+        </a>
+        <a class="nav-item" href="UTS4.html">
+          <span class="icon">🤍</span><span>UTS-4 My SHAPE</span>
+        </a>
+        <a class="nav-item" href="UTS5.html">
+          <span class="icon">📄</span><span>UTS-5 My Personal Reviews</span>
+        </a>
+
+        <a class="nav-item" href="UAS1.html">
+          <span class="icon">💡</span><span>UAS-1 My Concepts</span>
+        </a>
+        <a class="nav-item" href="UAS2.html">
+          <span class="icon">🗣️</span><span>UAS-2 My Opinions</span>
+        </a>
+        <a class="nav-item" href="UAS3.html">
+          <span class="icon">🚀</span><span>UAS-3 My Innovations</span>
+        </a>
+        <a class="nav-item" href="UAS4.html">
+          <span class="icon">🧠</span><span>UAS-4 My Knowledge</span>
+        </a>
+        <a class="nav-item" href="UAS5.html">
+          <span class="icon">💼</span><span>UAS-5 My Professional Reviews</span>
+        </a>
+
+        <a class="nav-item" href="summary.html">
+          <span class="icon">📝</span><span>Summary</span>
+        </a>
+        <a class="nav-item" href="references.html">
+          <span class="icon">📚</span><span>References</span>
+        </a>
       </nav>
     </aside>
 
-    <!-- Main -->
     <main>
       <header class="header">
         <h1>My Songs for You</h1>
@@ -52,28 +85,23 @@
       </header>
 
       <article class="card">
-        <!-- 🎬 Music Video -->
         <h2>Music Video</h2>
-        <!-- Responsive container -->
-<div style="position:relative;padding-bottom:56.25%;height:0;border-radius:16px;overflow:hidden;background:#000;">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/CHAGyzL4Z1Q?modestbranding=1&rel=0"
-    title="We'll Be Okay, For Today - Arash Buana & Anya Taroreh"
-    style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:16px;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/CHAGyzL4Z1Q?modestbranding=1&rel=0"
+            title="We'll Be Okay, For Today - Arash Buana & Anya Taroreh"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
 
-<!-- Fallback button + thumbnail link -->
-<div style="margin-top:12px;text-align:center">
-  <a href="https://www.youtube.com/watch?v=CHAGyzL4Z1Q" target="_blank" rel="noopener"
-     style="display:inline-block;padding:10px 16px;border-radius:10px;background:#1d4ed8;color:#fff;text-decoration:none;font-weight:600;">
-    ▶ Watch on YouTube
-  </a>
-</div>
+        <div style="margin-top:-12px; margin-bottom:24px; text-align:center">
+          <a href="https://www.youtube.com/watch?v=CHAGyzL4Z1Q" target="_blank" rel="noopener"
+             style="display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent-700);color:#fff;text-decoration:none;font-weight:600;">
+            ▶ Watch on YouTube
+          </a>
+        </div>
 
-        <!-- 🎶 About the Song -->
         <h2>About It</h2>
         <div class="about">
           <p>
@@ -83,7 +111,7 @@
             untuk tidak selalu kuat, selama ada seseorang untuk berbagi hari.
           </p>
         </div>
-        <!-- 📝 Lyrics -->
+
         <h2>Lyrics</h2>
         <div class="lyrics">
           <p><em>
@@ -112,7 +140,6 @@
           </em></p>
         </div>
 
-        <!-- 💭 Song Meaning -->
         <h2>Why This Song Matters to Me</h2>
         <div class="meaning">
           <p>

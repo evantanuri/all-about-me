@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     main {
-      background-color: #f8fbff;
+      background-color: var(--bg);
     }
     .header h1 {
-      color: #1d4ed8;
+      color: var(--accent-700);
       font-weight: 700;
     }
     .header p {
-      color: #475569;
+      color: var(--muted);
       margin-bottom: 20px;
     }
     table {
@@ -23,62 +23,96 @@
       background: #fff;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      box-shadow: var(--shadow);
     }
     th, td {
-      border: 1px solid #e2e8f0;
+      border: 1px solid var(--border);
       padding: 12px 16px;
       text-align: left;
       vertical-align: top;
     }
     th {
-      background-color: #eff6ff;
-      color: #1e3a8a;
+      background-color: var(--sidebar);
+      color: var(--accent-700);
       width: 28%;
     }
     td {
       background-color: #ffffff;
-      color: #0f172a;
+      color: var(--text);
     }
     h2 {
       margin-top: 32px;
-      color: #1d4ed8;
-      border-left: 6px solid #3b82f6;
+      color: var(--accent-700);
+      border-left: 6px solid var(--accent);
       padding-left: 10px;
     }
     p {
-      color: #1e293b;
+      color: var(--text);
       line-height: 1.7;
     }
     .mission, .narrative {
       background: #ffffff;
       border-radius: 12px;
       padding: 20px 26px;
-      border: 1px solid #e2e8f0;
+      border: 1px solid var(--border);
       margin-top: 16px;
+      box-shadow: var(--shadow);
     }
   </style>
 </head>
 
 <body>
   <div class="layout">
-    <!-- Sidebar -->
     <aside>
       <div class="brand">
         <h2>Evan Nathanael Tanuri</h2>
         <p class="nim">18224019</p>
       </div>
       <nav>
-        <a class="nav-item" href="index.html"><span class="icon">🏠</span><span>Selamat Datang</span></a>
-        <a class="nav-item" href="UTS1.html"><span class="icon">👤</span><span>UTS-1 All About Me</span></a>
-        <a class="nav-item" href="UTS2.html"><span class="icon">🎵</span><span>UTS-2 My Songs for You</span></a>
-        <a class="nav-item" href="UTS3.html"><span class="icon">📖</span><span>UTS-3 My Stories for You</span></a>
-        <a class="nav-item active" href="UTS4.html"><span class="icon">🤍</span><span>UTS-4 My SHAPE</span></a>
-        <a class="nav-item" href="UTS5.html"><span class="icon">📄</span><span>UTS-5 My Personal Reviews</span></a>
+        <a class="nav-item" href="index.html">
+          <span class="icon">🏠</span><span>Selamat Datang</span>
+        </a>
+        <a class="nav-item" href="UTS1.html">
+          <span class="icon">👤</span><span>UTS-1 All About Me</span>
+        </a>
+        <a class="nav-item" href="UTS2.html">
+          <span class="icon">🎵</span><span>UTS-2 My Songs for You</span>
+        </a>
+        <a class="nav-item" href="UTS3.html">
+          <span class="icon">📖</span><span>UTS-3 My Stories for You</span>
+        </a>
+        <a class="nav-item active" href="UTS4.html">
+          <span class="icon">🤍</span><span>UTS-4 My SHAPE</span>
+        </a>
+        <a class="nav-item" href="UTS5.html">
+          <span class="icon">📄</span><span>UTS-5 My Personal Reviews</span>
+        </a>
+
+        <a class="nav-item" href="UAS1.html">
+          <span class="icon">💡</span><span>UAS-1 My Concepts</span>
+        </a>
+        <a class="nav-item" href="UAS2.html">
+          <span class="icon">🗣️</span><span>UAS-2 My Opinions</span>
+        </a>
+        <a class="nav-item" href="UAS3.html">
+          <span class="icon">🚀</span><span>UAS-3 My Innovations</span>
+        </a>
+        <a class="nav-item" href="UAS4.html">
+          <span class="icon">🧠</span><span>UAS-4 My Knowledge</span>
+        </a>
+        <a class="nav-item" href="UAS5.html">
+          <span class="icon">💼</span><span>UAS-5 My Professional Reviews</span>
+        </a>
+
+        <a class="nav-item" href="summary.html">
+          <span class="icon">📝</span><span>Summary</span>
+        </a>
+        <a class="nav-item" href="references.html">
+          <span class="icon">📚</span><span>References</span>
+        </a>
       </nav>
     </aside>
 
-    <!-- Main -->
     <main>
       <header class="header">
         <h1>UTS-4 My SHAPE</h1>
