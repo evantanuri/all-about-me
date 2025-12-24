@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Summary — Evan Nathanael Tanuri</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Styling mendalam untuk Summary */
+    .summary-hero {
+      background: linear-gradient(135deg, var(--accent-700) 0%, var(--accent) 100%);
+      color: white;
+      padding: 50px 40px;
+      border-radius: 24px;
+      margin-bottom: 40px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    
+    .summary-section {
+      margin-bottom: 50px;
+    }
+    
+    .summary-section h2 {
+      color: var(--accent-700);
+      border-bottom: 2px solid var(--accent-200);
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .summary-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+    
+    .summary-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .summary-card h3 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.2rem;
+      border-bottom: 1px solid var(--bg);
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .highlight-blue { color: var(--accent-700); font-weight: 700; }
+    
+    .reflection-quote {
+      font-style: italic;
+      color: var(--muted);
+      border-left: 4px solid var(--accent);
+      padding-left: 20px;
+      margin: 30px 0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: var(--bg);
+      color: var(--accent-700);
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    /* Styling tambahan untuk Rekap Skor */
+    .recap-container {
+      background: #f8fafc;
+      border-radius: 20px;
+      padding: 30px;
+      border: 1px solid var(--border);
+      margin: 40px 0;
+    }
+    .recap-title {
+      color: #1d4ed8;
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .recap-flex {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+    }
+    .recap-box h4 { margin: 0; color: var(--muted); font-size: 0.9rem; text-transform: uppercase; }
+    .recap-box p { margin: 5px 0 0; font-size: 1.5rem; font-weight: 800; color: var(--text); }
+    .total-score {
+      width: 100%;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 2px dashed var(--border);
+      font-size: 1.4rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <div class="brand">
+        <h2>Evan Nathanael Tanuri</h2>
+        <p class="nim">18224019</p>
+      </div>
+      <nav>
+        <a class="nav-item" href="index.html"><span class="icon">🏠</span><span>Selamat Datang</span></a>
+        <a class="nav-item" href="UTS1.html"><span class="icon">👤</span><span>UTS-1 All About Me</span></a>
+        <a class="nav-item" href="UTS2.html"><span class="icon">🎵</span><span>UTS-2 My Songs for You</span></a>
+        <a class="nav-item" href="UTS3.html"><span class="icon">📖</span><span>UTS-3 My Stories for You</span></a>
+        <a class="nav-item" href="UTS4.html"><span class="icon">🤍</span><span>UTS-4 My SHAPE</span></a>
+        <a class="nav-item" href="UTS5.html"><span class="icon">📄</span><span>UTS-5 My Personal Reviews</span></a>
+        
+        <a class="nav-item" href="UAS1.html"><span class="icon">💡</span><span>UAS-1 My Concepts</span></a>
+        <a class="nav-item" href="UAS2.html"><span class="icon">🗣️</span><span>UAS-2 My Opinions</span></a>
+        <a class="nav-item" href="UAS3.html"><span class="icon">🚀</span><span>UAS-3 My Innovations</span></a>
+        <a class="nav-item" href="UAS4.html"><span class="icon">🧠</span><span>UAS-4 My Knowledge</span></a>
+        <a class="nav-item" href="UAS5.html"><span class="icon">💼</span><span>UAS-5 My Professional Reviews</span></a>
+        
+        <a class="nav-item active" href="summary.html"><span class="icon">📝</span><span>Summary</span></a>
+        <a class="nav-item" href="references.html"><span class="icon">📚</span><span>References</span></a>
+      </nav>
+    </aside>
+
+    <main>
+      <header class="header">
+        <h1>Summary</h1>
+        <p>Integrasi Refleksi Personal dan Rekayasa Sistem Global</p>
+      </header>
+
+      <article class="card">
+        <section class="summary-hero">
+          <h2>Menuju Kedewasaan Profesional</h2>
+          <p>Membangun Agensi Manusia dalam Menghadapi Krisis Pangan</p>
+        </section>
+
+        <section class="summary-section">
+          <h2>Fase Fondasi Personal (UTS 1-5)</h2>
+          <p>Fase awal ini berfokus pada pemahaman diri sebagai dasar komunikasi interpersonal yang efektif.</p>
+          <div class="card-grid">
+            <div class="summary-card">
+              <span class="badge">UTS 1 & 4</span>
+              <h3>Identitas & SHAPE</h3>
+              <p>Menemukan kekuatan dalam adaptabilitas dan pemikiran jernih di bawah tekanan. Memahami bahwa teknologi harus selalu berpusat pada manusia.</p>
+            </div>
+            <div class="summary-card">
+              <span class="badge">UTS 2 & 3</span>
+              <h3>Ekspresi & Resiliensi</h3>
+              <p>Melalui narasi "Belajar Menata Ulang", saya menyadari bahwa mengakui kebutuhan akan bantuan adalah titik balik pertumbuhan. Harmoni lagu menjadi simbol ketenangan dalam menghadapi ketidakpastian.</p>
+            </div>
+            <div class="summary-card">
+              <span class="badge">UTS 5</span>
+              <h3>Evaluasi Diri</h3>
+              <p>Melakukan penilaian kritis terhadap perkembangan diri, memastikan orisinalitas dan keterlibatan emosional tetap terjaga dalam setiap karya.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="reflection-quote">
+          "Pendidikan rekayasa harus bergeser dari sekadar menyelesaikan masalah menjadi memberdayakan manusia untuk menyelesaikan masalah mereka sendiri melalui narasi agensi yang kuat."
+        </div>
+
+        <section class="summary-section">
+          <h2>Fase Rekayasa Sistem Global (UAS 1-5)</h2>
+          <p>Fase kedua ini menerapkan konsep rekayasa sistem untuk mengatasi isu kelaparan dan kerawanan pangan global.</p>
+          <div class="card-grid">
+            <div class="summary-card">
+              <span class="badge">UAS 1 & 2</span>
+              <h3>Konsep & Opini Pangan</h3>
+              <p>Menganalisis krisis "Last Mile" pangan di mana 733 juta orang menderita kelaparan. Menentang model <em>one-size-fits-all</em> dan mengusulkan digitalisasi pangan yang berbasis <em>Equity</em>.</p>
+            </div>
+            <div class="summary-card">
+              <span class="badge">UAS 3 & 4</span>
+              <h3>Inovasi TISE & Pengetahuan</h3>
+              <p>Merancang arsitektur <strong>TISE 2.0</strong> sebagai teater kerja agentik untuk koordinasi nutrisi. Memetakan pengetahuan aplikatif untuk menjaga agensi manusia di tengah supremasi AI.</p>
+            </div>
+            <div class="summary-card">
+              <span class="badge">UAS 5</span>
+              <h3>Tinjauan Profesional</h3>
+              <p>Memvalidasi seluruh solusi rekayasa pangan dengan skor maksimal, membuktikan integrasi antara logika sistem dan nilai kemanusiaan (Heart).</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="recap-container">
+          <h2 class="recap-title">Rekapitulasi Capaian Akademik</h2>
+          <div class="recap-flex">
+            <div class="recap-box">
+              <h4>Rata-rata UTS (1-4)</h4>
+              <p>4.4 (≈ 88%)</p>
+            </div>
+            <div class="recap-box">
+              <h4>Rata-rata UAS (1-4)</h4>
+              <p>5.0 (100%)</p>
+            </div>
+          </div>
+          <div class="recap-flex total-score">
+            <div class="recap-box">
+              <h4>Indeks Portofolio Keseluruhan</h4>
+              <p class="highlight-blue">4.7 / 5.0 (94%)</p>
+            </div>
+          </div>
+        </section>
+
+        <section style="margin-top: 40px; border-top: 1px solid var(--border); padding-top: 30px;">
+          <h2>Pesan Penutup</h2>
+          <p>
+            Melalui website ini, saya mendokumentasikan transformasi saya dari seorang mahasiswa yang mengeksplorasi diri menjadi calon profesional Sistem dan Teknologi Informasi yang sadar arah. Dengan metodologi <strong>VALORAIZE</strong>, saya berkomitmen untuk terus menciptakan nilai nyata (Value Co-creation) dalam setiap tantangan kemanusiaan yang ada di masa depan.
+          </p>
+        </section>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
